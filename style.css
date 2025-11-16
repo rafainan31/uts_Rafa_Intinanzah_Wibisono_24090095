@@ -1,0 +1,314 @@
+/* ---------------------------------------------------
+   GLOBAL
+--------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --dark-blue: #0f172a;
+  --blue2: #1e293b;
+  --blue3: #334155;
+  --blue-accent: #3b82f6;
+  --text-light: #e2e8f0;
+  --white: #ffffff;
+}
+
+/* ---------------------------------------------------
+   LOGIN PAGE
+--------------------------------------------------- */
+.login-bg {
+  background: var(--dark-blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper {
+  display: flex;
+  background: var(--blue2);
+  padding: 30px;
+  border-radius: 12px;
+  width: 900px;
+  gap: 40px;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image {
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-right {
+  width: 350px;
+}
+
+.login-title {
+  color: var(--white);
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.login-form .input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: var(--blue3);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px 40px;
+  border-radius: 8px;
+  border: 1px solid var(--blue3);
+  background: var(--blue2);
+  color: var(--white);
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: var(--blue-accent);
+  border: none;
+  color: var(--white);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.divider {
+  text-align: center;
+  color: #8f9eb2;
+  margin: 15px 0;
+}
+
+.social-row {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--blue3);
+  background: transparent;
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------
+   SIDEBAR
+--------------------------------------------------- */
+.sidebar {
+  width: 70px;
+  height: 100vh;
+  background: var(--blue2);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.side-item {
+  color: #8fa3c1;
+  font-size: 22px;
+  padding: 12px;
+}
+
+.side-item.active,
+.side-item:hover {
+  color: var(--white);
+}
+
+.logout-btn {
+  margin-top: auto;
+  padding: 12px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: #d75a5a;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------
+   MAIN CONTENT
+--------------------------------------------------- */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  color: var(--white);
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------
+   DASHBOARD CARDS
+--------------------------------------------------- */
+.card-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.card-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+body.app-bg {
+  display: flex;             
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  background: var(--dark-blue);  
+}
+
+.sidebar {
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--dark-blue);
+}
+
+
+/* ---------------------------------------------------
+   PRODUCT TABLE
+--------------------------------------------------- */
+.table-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--dark-blue);
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+td button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+* {
+  transition: 0.25s ease;
+}
+
+/* ---------------------------
+   BUTTON HOVER
+----------------------------*/
+.btn-primary:hover {
+  background: #60a5fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.45);
+}
+
+.social-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+/* ---------------------------
+   INPUT FOCUS / HOVER
+----------------------------*/
+.input-group input:hover {
+  border-color: #3b82f6;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* ---------------------------
+   SIDEBAR ICON ANIMATION
+----------------------------*/
+.side-item {
+  transition: 0.25s ease;
+  border-radius: 12px;
+}
+
+.side-item:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-2px) scale(1.12);
+  color: #fff;
+}
+
+.logout-btn:hover {
+  transform: scale(1.1);
+  color: #ff7b7b;
+}
+
+/* ---------------------------
+   CARD HOVER
+----------------------------*/
+.card {
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0px 6px 18px rgba(255,255,255,0.15);
+}
+
+/* ---------------------------
+   TABLE ROW HOVER
+----------------------------*/
+.table-card table tbody tr {
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.table-card table tbody tr:hover {
+  background: rgba(59, 130, 246, 0.08);
+  transform: scale(1.01);
+}
+
+/* Icon action */
+td button:hover {
+  transform: scale(1.3);
+  color: #3b82f6;
+}
+
