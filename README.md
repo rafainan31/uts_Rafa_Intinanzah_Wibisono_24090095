@@ -6,7 +6,7 @@
 
 ## Link
 - GitHub Repository: https://github.com/aliefsatrio/UTS-AliefSatrio-24090072.git
-- GitHub Pages: https://aliefsatrio.github.io/UTS-AliefSatrio-24090072/
+- GitHub Pages: [https://rafainan31.github.io/uts_Rafa_Intinanzah_Wibisono_24090095/
 
 ## Deskripsi Project
 Project ini adalah implementasi website untuk Ujian Tengah Semester mata kuliah Pemrograman Web 1. Website terdiri dari 3 halaman utama:
