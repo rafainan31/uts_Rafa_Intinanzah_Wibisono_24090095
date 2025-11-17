@@ -9,14 +9,14 @@
 - GitHub Pages: https://rafainan31.github.io/uts_Rafa_Intinanzah_Wibisono_24090095/
 
 ## Deskripsi Project
-Project ini adalah implementasi website untuk Ujian Tengah Semester mata kuliah Pemrograman Web 1. Website terdiri dari 3 halaman utama:
+Project ini merupakan pembuatan sebuah website untuk memenuhi tugas Ujian Tengah Semester pada mata kuliah Pemrograman Web 1. Aplikasi web ini memiliki tiga halaman utama, yaitu:
 
-1. **Halaman Login (index.html)** - Form login dengan validasi email dan password
-2. **Halaman Dashboard (dashboard.html)** - Menampilkan ringkasan data produk, penjualan, dan revenue
-3. **Halaman Data Produk (products.html)** - Menampilkan daftar produk dengan fitur edit dan delete
+1. **Halaman Login (index.html)** - Berisi form autentikasi pengguna dengan validasi pada input email dan kata sandi.
+2. **Halaman Dashboard (dashboard.html)** - Menampilkan ringkasan informasi seperti jumlah produk, total penjualan, dan pendapatan.
+3. **Halaman Data Produk (products.html)** - Memuat daftar produk lengkap dengan fitur untuk mengedit serta menghapus data.
 
 ## Teknologi yang Digunakan
 - HTML5
-- CSS3 (Flexbox, Grid, Responsive Design)
-- JavaScript (DOM Manipulation, Event Handling)
-- GitHub Pages untuk deployment
+- CSS3 (menggunakan Flexbox, Grid, serta desain responsif)
+- JavaScript (manipulasi DOM dan event handling)
+- GitHub Pages sebagai platform publikasi
